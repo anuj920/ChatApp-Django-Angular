@@ -1,0 +1,25 @@
+
+
+.chat-online{
+    padding: 10px 0px;
+    border: 1px  solid lightseagreen;
+}
+
+.online-user{
+    padding: 15px 25px;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+}
+
+.user-name{
+    text-align: left;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.user-status{
+    float: right;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1B5E20;
+}

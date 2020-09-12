@@ -1,0 +1,29 @@
+
+<div class="main">
+    <p class="sign" align="center">Sign in</p>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()">
+
+        <input class="username" type="text" align="center" autocomplete="off" placeholder="Email Address" formControlName="username" required>
+
+        <span *ngIf="username.invalid && (username.dirty || username.touched || !isformValid)">
+            <p align="center" class="text-danger" *ngIf="username.errors?.required"> Email Address is required. </p>
+            <p align="center" class="text-danger" *ngIf="username.errors?.email"> Please Provide Valid Email Address</p>
+        </span>
+
+        <input class="username"  type="password" align="center" autocomplete="off" placeholder="Password" formControlName="password" required>
+
+        <span *ngIf="password.invalid && (password.dirty || password.touched || !isformValid)">
+            <p align="center" class="text-danger" *ngIf="password.errors?.required"> Password is required. </p>
+        </span>
+
+        <div class="text-center">
+
+            <button type="submit" class="submit" align="center">Sign in</button>
+
+        </div>
+        <br>
+        <p class="forgot" align="center"><a [routerLink]="[ '/register' ]">Create New Account</a></p>
+        <br>
+        <br>
+    </form>
+</div>

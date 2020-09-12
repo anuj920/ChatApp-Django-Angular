@@ -1,0 +1,53 @@
+
+.chat{
+    height: 80vh;
+    border: 1px solid black;
+    border-bottom: 0;
+}
+
+
+
+
+.message-type{
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+}
+
+#online-chat{
+    overflow-y: scroll;
+    height: 80%;
+}
+
+.message{
+    padding: 2px 5px;
+    border-bottom: 1px solid lightblue;
+    text-transform: capitalize;
+}
+
+
+.form-group{
+    margin: 0;
+}
+
+.form-control{
+    margin-bottom: 5px;
+}
+
+input{
+    width: 80%;
+    float: left;
+}
+
+button{
+    float: right;
+}
+
+.message-user{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.user-msg{
+    font-size: 16px;
+}

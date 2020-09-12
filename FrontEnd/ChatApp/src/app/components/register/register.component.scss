@@ -1,0 +1,107 @@
+span p{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.main {
+    background-color: #FFFFFF;
+    width: 500px;
+    margin: 5em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    padding: 0 5%;
+  }
+  
+  .sign {
+    padding-top: 40px;
+    color: #8C55AA;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+  }
+  
+  .username {
+    width: 100%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 25px auto;
+  }
+  
+  form{
+    padding-top: 40px;
+  }
+  
+  .username:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+  
+  }
+  
+  .submit {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #9C27B0, #E040FB);
+    border: none;
+    padding: 15px 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    outline: none;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  }
+  
+  .forgot {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #AB47BC;
+    padding-top: 15px;
+  }
+  
+  .forgot a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #03A9F4;
+    text-decoration: underline !important;
+    cursor: pointer;
+  }
+
+  .check-field input[type=checkbox]{
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    outline: 0;
+    transition: .5s;
+  }
+
+  .check-field input:checked[type=checkbox]:before {
+    border-top: none;
+    border-left: none;
+    border-width: .15rem;
+    border-color: #337ab7;
+    width: 10px;
+    -webkit-transform: rotate(45deg) translate(2px,-7px);
+    transform: rotate(45deg) translate(2px,-7px);
+  }
+
+  .check-field input[type=checkbox]:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: .09rem solid #000;
+    border-radius: 2px;
+    box-sizing: border-box;
+    transition: .5s;
+  }

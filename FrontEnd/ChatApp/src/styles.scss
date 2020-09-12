@@ -1,0 +1,28 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~ngx-toastr/toastr';
+
+
+// common css properties
+
+a:hover{
+    text-decoration: none !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+p{
+    margin: 0 !important;
+}

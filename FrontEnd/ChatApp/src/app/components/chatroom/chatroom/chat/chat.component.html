@@ -1,0 +1,45 @@
+<br>
+<br>
+<br>
+
+
+<div class="container">
+
+
+    <div class="row">
+        <div class="col-12">
+            <div class="chat">
+                <span style="text-align: center">
+                <h6>User name : {{current_username | titlecase }}</h6>
+                </span> 
+                <hr>
+                <div id="online-chat">
+                   
+                    <div *ngFor="let msg of messages" class="message">
+
+                        <span class="message-user">
+                            <span>{{msg.username}}</span>
+                        </span>
+                        <span>:--  </span>
+                        <span class="user-msg">
+                            {{msg.message}}
+                        </span>
+
+                    </div>
+                </div>
+
+                <div class="message-type">
+                    <span class="form-group">
+                      <input type="email" class="form-control" id="message"  #message='ngModel' [(ngModel)]="current_msg">
+                    </span>
+                    <button (click)="SendMsg()" class="btn btn-primary">Submit</button>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+
+</div>

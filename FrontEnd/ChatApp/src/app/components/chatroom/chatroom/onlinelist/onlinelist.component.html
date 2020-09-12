@@ -1,0 +1,36 @@
+<br>
+<br>
+<br>
+
+
+<div class="container">
+
+
+    <div class="row">
+        <div class="col-12">
+            <div class="chat-online">
+                <span style="text-align: center">
+                <h6>User Online : {{OnlineUserList?.length}}</h6>
+                </span> 
+                <hr>
+                <div *ngFor="let user of OnlineUserList" class="online-user" (click)="goToChat(user)">
+                    <div class="user-content">
+
+                        <span class="user-name">
+                            <span>{{user.username}}</span>
+                        </span>
+
+                        <span class="user-status">
+                            <span>online</span>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+
+</div>
