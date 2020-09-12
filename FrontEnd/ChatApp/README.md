@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
 
+
+## Project configuration steps:
+1) download/clone project git directory.
+2) open cmd and navigate to project folder where package.json file exist.
+3) run npm install command to install node_modules
+4) once installation done run ng serve or npm start command.
+5) open browser and type http://localhost:4200.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
